@@ -56,10 +56,10 @@ typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
 IKI_DLLESPEC extern void execute_10(char*, char *);
 IKI_DLLESPEC extern void execute_11(char*, char *);
-IKI_DLLESPEC extern void execute_15(char*, char *);
 IKI_DLLESPEC extern void execute_14(char*, char *);
+IKI_DLLESPEC extern void execute_13(char*, char *);
 IKI_DLLESPEC extern void transaction_0(char*, char*, unsigned, unsigned, unsigned);
-funcp funcTab[5] = {(funcp)execute_10, (funcp)execute_11, (funcp)execute_15, (funcp)execute_14, (funcp)transaction_0};
+funcp funcTab[5] = {(funcp)execute_10, (funcp)execute_11, (funcp)execute_14, (funcp)execute_13, (funcp)transaction_0};
 const int NumRelocateId= 5;
 
 void relocate(char *dp)
