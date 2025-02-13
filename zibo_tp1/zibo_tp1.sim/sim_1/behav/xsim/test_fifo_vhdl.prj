@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../zibo_tp1.srcs/sources_1/imports/Downloads/fifo.0.vhd" \
+"../../../../zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd" \
+
+# Do not sort compile order
+nosort

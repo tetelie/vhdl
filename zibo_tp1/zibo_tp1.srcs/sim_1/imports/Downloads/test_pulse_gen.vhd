@@ -54,7 +54,7 @@ end process P_TIMEOUT;
 --------------------------------------------------
 -- instantiation et mapping du composant registres
 pgen0 : entity work.pulse_gen(behaviour)
-		   generic map (10)	
+		   --generic map (10)	
 		   port map (MCLK => E_CLK,
                         RST => E_RST,
                         P => E_P);
@@ -81,11 +81,6 @@ begin
 	wait until (E_P='1');
 
 	-- ADD NEW SEQUENCE HERE
-	-- Vérification de plusieurs pulses
-    for i in 1 to 10 loop
-      wait until (E_P = '1');
-      report "Pulse détecté dans la boucle à " & time'image(now);
-    end loop;
 
 
 	-- LATEST COMMAND (NE PAS ENLEVER !!!)

@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/elied/vivado/zibo_tp1/zibo_tp1.sim/sim_1/synth/timing/xsim/test_memory_time_synth.v,1738925530,verilog,,,,glbl;pulse_gen,,,,,,,,
+C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_memory.3.vhd,1738925468,vhdl,,,,test_memory,,,,,,,,
+C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_pulse_gen.vhd,1738249876,vhdl,,,,test_pulse_gen,,,,,,,,
+C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_registres.0.vhd,1738857282,vhdl,,,,test_registres,,,,,,,,
+C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sources_1/imports/Downloads/cpu_package.0.vhd,1738924463,vhdl,C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_memory.3.vhd;C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sources_1/imports/Downloads/memory.3.vhd,,,cpu_package,,,,,,,,
+C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sources_1/imports/Downloads/memory.3.vhd,1738924463,vhdl,C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_memory.3.vhd,,,memory,,,,,,,,
+C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sources_1/imports/Downloads/registres.1.vhd,1738857027,vhdl,C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_registres.0.vhd,,,registres,,,,,,,,

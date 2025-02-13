@@ -30,11 +30,12 @@ begin
 ppulse: process(MCLK,RST)
     variable cpt: natural range 0 to MAX_CPT;
 begin
-    if( RST='0' ) then
+
+    if rising_edge(MCLK) then
+        if( RST='0' ) then
         cpt:=0;
         P <= '0';
-    elsif rising_edge(MCLK) then
-        P <= '0';
+        else
         if cpt = 0 then
           P <= '1';
         end if;
@@ -43,6 +44,7 @@ begin
         else
           cpt := cpt+1;
         end if;
+    end if;
     end if;
 end process ppulse;
 
