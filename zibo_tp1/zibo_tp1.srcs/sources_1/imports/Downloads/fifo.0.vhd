@@ -75,6 +75,7 @@ begin
         elsif WEN = '0' then
             W_ADR <= W_ADR + '1';
             REGS(conv_integer(W_ADR)) <= DI;
+            
                 
 		end if;
 	end if;
@@ -92,7 +93,7 @@ begin
 		if RST='0' then
             R_ADR <= (others=>'0');
             DO <= (others=>'Z');
-        elsif (REN = '0' and EMPTY = '0') or (WEN = '0' and FULL = '0') then
+        elsif (REN = '0' and EMPTY = '0') or (WEN = '0' and FULL = '1') then
             R_ADR <= R_ADR + '1';
             DO <= REGS(conv_integer(R_ADR));
 		end if;
