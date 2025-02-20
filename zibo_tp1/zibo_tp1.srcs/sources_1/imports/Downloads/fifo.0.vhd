@@ -72,11 +72,9 @@ begin
 		-- test du RST
 		if RST='0' then
             W_ADR <= (others => '0');
-        elsif WEN = '0' then
-            W_ADR <= W_ADR + '1';
-            REGS(conv_integer(W_ADR)) <= DI;
-            
-                
+        elsif WEN = '0' then -- si écriture
+            W_ADR <= W_ADR + '1'; -- on met l'adresse d'écriture sur la prochaine adresse
+            REGS(conv_integer(W_ADR)) <= DI; -- on met dans l'adresse mémoire d'écriture la valeur DI
 		end if;
 	end if;
 end process P_WRITE;
@@ -129,7 +127,7 @@ begin
 		-- test du RST
 		if RST='0' then
             FULL <= '1';
-        elsif W_ADR = R_ADR then
+        elsif W_ADR = R_ADR+1 then 
             FULL <= '0';
         elsif FULL = '0' and REN = '0' and WEN = '1' then
             FULL <= '1';
@@ -141,17 +139,34 @@ end process P_FULL;
 -- Process P_MID indique l'etat au moins a moitie plein de la FIFO
 --		'1' FIFO au moins a moitie pleine '0' sinon, cette information
 --		 etant mise a jour sur front montant d'horloge
-P_MID:	process(CLK)
-	variable temp_W : std_logic_vector (ABUS_WIDTH-1 downto 0);
+P_MID: process(CLK)
+    variable temp_W : std_logic_vector (ABUS_WIDTH-1 downto 0);
 begin
-	if rising_edge(CLK) then
-		-- test du RST
-		if RST='0' then
-            
-            
-            
-		end if;
-	end if;
+    if rising_edge(CLK) then
+        if RST = '0' then
+            MID <= '1';
+        else
+            -- Mise à jour temporaire de temp_W
+            temp_W := W_ADR;
+
+            -- Vérifier si la FIFO est à moitié pleine
+            if (WEN = '0' and REN = '1') then
+                -- Incrémentation du nombre d'éléments dans la FIFO
+                temp_W := W_ADR + '1';
+            elsif (WEN = '1' and REN = '0') then
+                -- Décrémentation du nombre d'éléments
+                temp_W := W_ADR - '1';
+            end if;
+
+            -- La FIFO est considérée comme au moins à moitié pleine si le bit de poids fort de R_ADR 
+            -- est différent de celui de temp_W, ce qui signifie qu'on a rempli plus de la moitié.
+            if (R_ADR(R_ADR'HIGH) /= temp_W(W_ADR'HIGH)) then
+                MID <= '0';
+            else
+                MID <= '1';
+            end if;
+        end if;
+    end if;
 end process P_MID;
 
 end behavior;

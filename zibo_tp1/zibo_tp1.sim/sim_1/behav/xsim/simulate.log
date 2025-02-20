@@ -1,0 +1,28 @@
+Time resolution is 1 ps
+Error: Empty flag not set (or others wrong) !
+Time: 25 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Error: Empty flag still set (or others wrong) !
+Time: 35 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Error: Empty flag not set (or others wrong) !
+Time: 45 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Error: Mid flag not set (or others wrong) !
+Time: 75 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 95 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 115 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Error: Full flag not set (or others wrong) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Error: Data element READ is wrong (must be 3) !
+Time: 135 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Error: Empty flag not set (or others wrong) !
+Time: 155 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Error: Empty flag not set (or others wrong) !
+Time: 165 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Error: Data element READ is wrong (must be 0) !
+Time: 165 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Error: Q output must be high impedance !
+Time: 175 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+Failure: FIN DE SIMULATION
+Time: 185 ns  Iteration: 1  Process: /test_fifo/P_TEST  File: C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd
+$finish called at time : 185 ns : File "C:/Users/elied/vivado/zibo_tp1/zibo_tp1.srcs/sim_1/imports/Downloads/test_fifo.0.vhd" Line 220
